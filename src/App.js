@@ -1,25 +1,42 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import Contact from "./components/Contact";
+import "./styles/app.css";
+import ContactAdder from "./components/ContactAdder";
 
-function App() {
+const App = () => {
+  const contacts = [
+    {
+      name: "Sunav Sapkota",
+      number: 73938226,
+      loaction: "Kathmandu",
+    },
+    {
+      name: "Subham Dahal",
+      number: 73733626,
+      loaction: "Matidevi",
+    },
+    {
+      name: "Rahul Dev",
+      number: 736292226,
+      loaction: "Kathmandu",
+    },
+  ];
+  const addContactList = (ContactList) => {
+    contacts.push(ContactList);
+    console.log(contacts);
+  };
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <div className="contact_adder">
+        <ContactAdder onContactList={addContactList} />
+      </div>
+      <div className="contact_list">
+        <h3>Contact list</h3>
+        {contacts.map((data) => (
+          <Contact data={data}></Contact>
+        ))}
+      </div>
+    </>
   );
-}
-
+};
 export default App;
