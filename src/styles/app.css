@@ -1,18 +1,53 @@
+* {
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  margin: 0px;
+  padding: 0px;
+}
+
+.nav_bar {
+  background-color: #515aa5;
+  text-align: center;
+  font-size: 20px;
+  color: white;
+  padding: 10px;
+}
 .contact_list {
-  background: #ccc;
-  padding: 10px 20px;
+  background: #cac7c7;
+  padding: 1rem;
   margin: 5px;
-  border-radius: 5px;
+  border-radius: 15px;
 }
 .contact {
-  background-color: #fff;
+  background-color: #515aa5;
   border-radius: 10px;
-  margin: 5px;
-  padding: 5px;
+  margin: 10px;
+  padding: 10px;
+  color: white;
 }
+
 .contact_adder {
-    background: #ccc;
-    padding: 10px 20px;
-    margin: 5px;
-    border-radius: 5px;
-  }
+  background: #cac7c7;
+  padding: 5px;
+  margin: 5px;
+  border-radius: 15px;
+}
+input {
+  border: 0px;
+  padding: 5px;
+  margin: 2px;
+  border-radius: 9px;
+  outline: none;
+}
+button {
+  border: 0px;
+  padding: 5px;
+  margin: 2px;
+  border-radius: 12px;
+  outline: none;
+  background: #515aa5;
+  color: white;
+  cursor: pointer;
+}

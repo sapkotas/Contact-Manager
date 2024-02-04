@@ -13,3 +13,5 @@ const Contact = (list) => {
   );
 };
 export default Contact;
+
+  
